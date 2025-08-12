@@ -21,9 +21,9 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
 
         echo "<tr>
-                <td> {$row['id']} </td>
-                <td> {$row['name']} </td>
-                <td> {$row['email']} </td>
+                <td> {$row['id_usuario']} </td>
+                <td> {$row['nome_usuario']} </td>
+                <td> {$row['email_usuario']} </td>
                 <td> {$row['created_at']} </td>
                 <td> 
                     <a href='update.php?id={$row['id']}'>Editar<a>
