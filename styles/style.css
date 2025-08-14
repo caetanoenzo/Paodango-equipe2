@@ -1,0 +1,49 @@
+.produtos_container{
+    width: 90%;
+    min-height: 120px;
+    background-color: rgba(255, 0, 0, 0);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.produtos_box{
+    width: 200px;
+    background-color: rgb(0, 123, 255);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 120px;
+}
+
+.produtos_box > h1{
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.produtos_box .secaoBranca{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.secaoBranca > h1{
+    font-size: medium;
+}
+
+.produtos_flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
