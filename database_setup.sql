@@ -16,8 +16,8 @@ create table produtos (
 	id_produto int primary key AUTO_INCREMENT not null,
     nome_produto varchar(45) not null,
     quantidade_produto int not null,
-    validade_produto DATE not null
-	
+    validade_produto DATE not null,
+    preco_produto int not null
 );
 
 create table clientes(
