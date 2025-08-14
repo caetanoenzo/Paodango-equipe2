@@ -34,10 +34,9 @@ body {
 }
 
 .produtos_container{
-    width: 90%;
+    width: 100%;
     min-height: 145px;
-    background-color: rgb(255, 0, 0);
-    margin: auto;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
