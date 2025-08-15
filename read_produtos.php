@@ -2,7 +2,17 @@
 
 include 'db.php';
 
-$sql = "SELECT id_produto, nome_produto, descricao_produto, quantidade_produto, validade_produto, preco_produto FROM produtos INNER JOIN usuarios on id_usuario = id_usuario";
+$sql = "SELECT 
+    p.id_produto, 
+    p.nome_produto, 
+    p.descricao_produto, 
+    p.quantidade_produto, 
+    p.validade_produto, 
+    p.preco_produto,
+    u.nome_usuario
+FROM produtos p
+INNER JOIN usuarios u ON p.id_usuario = u.id_usuario;
+";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
@@ -17,7 +27,7 @@ if ($result->num_rows > 0){
                 <h1>Quantidade: ' . htmlspecialchars($row["quantidade_produto"]) . '</h1>
                 <h1>Validade: ' . htmlspecialchars($row["validade_produto"]) . '</h1>
                 <h1>Preço: R$' . number_format($row["preco_produto"], 2, ',', '.') . '</h1>
-                <h1>ID Usuário: R$' . number_format($row["id_usuario"]) . '</h1>
+                <h1>ID Usuário:' . htmlspecialchars($row["nome_usuario"]) . '</h1>
                 
             </div>
         </div>
