@@ -17,7 +17,8 @@
         <div class="row"> 
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div class="container-fluid p-1 ms-5 me-5">
-                    <a class="navbar-brand fs-4" href="#">PãoDango 2</a>
+                    <a class="navbar-brand fs-4" href="#"></a>
+                    <img src="assets/logo.png" width="auto" height="40" class="d-inline-block align-top" alt="">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -115,7 +116,7 @@
             
             <div class="col-10 bg-light">
                 <?php
-                    include 'showProdutos.php';
+                    include 'read_produtos.php';
                 ?>
             </div>   
 
