@@ -34,14 +34,15 @@ body {
 }
 
 .produtos_container{
-    width: 100%;
+    width: 90%;
     min-height: 145px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
+    margin: auto;
+    margin-top: 15px;
 }
 
 .produtos_box{
