@@ -121,7 +121,9 @@
             <div id="Estoque">
                 <?php include 'read_produtos.php'; ?>
             </div>
-            <div id="Produtos"></div>
+            <div id="Produtos">
+                <?php include 'create_produtos.php'; ?>
+            </div>
             <div id="Usuarios"></div>
             <div id="Clientes"></div>
             </div>   
