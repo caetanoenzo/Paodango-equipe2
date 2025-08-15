@@ -81,3 +81,28 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+.menuButton{
+    background-color: white;
+    border: none;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    float: none; 
+    width: 100%;
+}
+
+li a{
+  position: relative; 
+  z-index: 2;
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;  
+  -moz-box-sizing: border-box;  
+  -webkit-box-sizing: border-box; 
+}
