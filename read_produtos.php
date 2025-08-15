@@ -27,7 +27,7 @@ if ($result->num_rows > 0){
                 <h1>Quantidade: ' . htmlspecialchars($row["quantidade_produto"]) . '</h1>
                 <h1>Validade: ' . htmlspecialchars($row["validade_produto"]) . '</h1>
                 <h1>Preço: R$' . number_format($row["preco_produto"], 2, ',', '.') . '</h1>
-                <h1>ID Usuário:' . htmlspecialchars($row["nome_usuario"]) . '</h1>
+                <h1>Usuário: ' . htmlspecialchars($row["nome_usuario"]) . '</h1>
                 
             </div>
         </div>
