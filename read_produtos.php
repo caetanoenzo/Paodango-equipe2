@@ -2,7 +2,7 @@
 
 include 'db.php';
 
-$sql = "SELECT * FROM produtos";
+$sql = "SELECT id_produto, nome_produto, descricao_produto, quantidade_produto, validade_produto, preco_produto FROM produtos INNER JOIN usuarios on id_usuario = id_usuario";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0){
@@ -13,9 +13,12 @@ if ($result->num_rows > 0){
         <h1>' . htmlspecialchars($row["nome_produto"]) . '</h1>
         <div class="produtos_flex">
             <div class="secaoBranca">
+                <h1>Descrição: ' . htmlspecialchars($row["descricao_produto"]) . '</h1>
                 <h1>Quantidade: ' . htmlspecialchars($row["quantidade_produto"]) . '</h1>
-                <h1>Preço: R$' . number_format($row["preco_produto"], 2, ',', '.') . '</h1>
                 <h1>Validade: ' . htmlspecialchars($row["validade_produto"]) . '</h1>
+                <h1>Preço: R$' . number_format($row["preco_produto"], 2, ',', '.') . '</h1>
+                <h1>ID Usuário: R$' . number_format($row["id_usuario"]) . '</h1>
+                
             </div>
         </div>
         ';

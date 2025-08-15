@@ -19,7 +19,8 @@
         <div class="row"> 
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div class="container-fluid p-1 ms-5 me-5">
-                    <a class="navbar-brand fs-4" href="#">PãoDango 2</a>
+                    <a class="navbar-brand fs-4" href="#"></a>
+                    <img src="assets/logo.png" width="auto" height="40" class="d-inline-block align-top" alt="">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -48,50 +49,71 @@
 
         <div class="row d-flex main">
             <div class="col-2 d-flex flex-column gap-5 p-4">
-                <div class="d-flex justify-content-between menuItem" onclick="changePage(1)">
-                    <div class="d-flex align-items-center ">
-                        <i class="bi bi-bar-chart-line me-4"></i>
-                        <p class="menuText">Dashboard</p>
-                    </div>
+                <button class="menuButton">
+                    <div class="d-flex justify-content-between menuItem" onclick="changePage(1)">
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-bar-chart-line me-4"></i>
+                            <ul class="menuText">
+                               <li><a href="">Dashboard</a></li> 
+                            </ul>
+                        </div>
 
-                    <i class="bi bi-caret-right"></i>
-                </div>
+                        <i class="bi bi-caret-right"></i>
+                    </div>                    
+                </button>
 
-                <div class="d-flex justify-content-between menuItem" onclick="changePage(2)">
-                    <div class="d-flex align-items-center">
-                        <i class="bi bi-bookshelf me-4"></i>
-                        <p class="menuText">Estoque</p>
-                    </div>
+                <button class="menuButton">
+                    <div class="d-flex justify-content-between menuItem" onclick="changePage(2)">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-bookshelf me-4"></i>
+                            <ul class="menuText">
+                               <li><a href="">Estoque</a></li> 
+                            </ul>
+                        </div>
 
-                    <i class="bi bi-caret-right"></i>
-                </div>
+                        <i class="bi bi-caret-right"></i>
+                    </div>                    
+                </button>
 
-                <div class="d-flex justify-content-between menuItem" onclick="changePage(3)">
-                    <div class="d-flex align-items-center ">
-                        <i class="bi bi-box-seam me-4"></i>
-                        <p class="menuText">Produtos</p>
-                    </div>
+                <button class="menuButton">
+                    <div class="d-flex justify-content-between menuItem" onclick="changePage(3)">
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-box-seam me-4"></i>
+                            <ul class="menuText">
+                               <li><a href="">Produtos</a></li> 
+                            </ul>
+                        </div>
 
-                    <i class="bi bi-caret-right"></i>
-                </div>
+                        <i class="bi bi-caret-right"></i>
+                    </div>                    
+                </button>
 
-                <div class="d-flex justify-content-between menuItem" onclick="changePage(4)">
-                    <div class="d-flex align-items-center ">
-                        <i class="bi bi-person-badge me-4"></i>
-                        <p class="menuText">Usuários</p>
-                    </div>
+                <button class="menuButton">
+                    <div class="d-flex justify-content-between menuItem" onclick="changePage(4)">
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-person-badge me-4"></i>
+                            <ul class="menuText">
+                               <li><a href="">Usuários</a></li> 
+                            </ul>
+                        </div>
 
-                    <i class="bi bi-caret-right"></i>
-                </div>
+                        <i class="bi bi-caret-right"></i>
+                    </div>                    
+                </button>
 
-                <div class="d-flex justify-content-between menuItem" onclick="changePage(5)">
-                    <div class="d-flex align-items-center ">
-                        <i class="bi bi-person me-4"></i>
-                        <p class="menuText">Clientes</p>
-                    </div>
+                <button class="menuButton">
+                    <div class="d-flex justify-content-between menuItem" onclick="changePage(5)">
+                        <div class="d-flex align-items-center ">
+                            <i class="bi bi-person me-4"></i>
+                            <ul class="menuText">
+                               <li><a href="">Clientes</a></li> 
+                            </ul>
+                        </div>
 
-                    <i class="bi bi-caret-right"></i>
-                </div>
+                        <i class="bi bi-caret-right"></i>
+                    </div>                    
+                </button>
+
             </div>
             
             <div class="col-10 bg-light">
