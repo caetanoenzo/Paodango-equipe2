@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipe 1 - Gerenciamento Pãodango</title>
 
+    <script src="changePage.js" defer></script>
+
     <link rel="stylesheet" href="styles/style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -23,7 +25,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto p-1">
-                            <li class="nav-item ms-5">
+                            <li class="nav-item ms-5" >
                                 <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
                             </li>
                             <li class="nav-item ms-5">
@@ -46,7 +48,7 @@
 
         <div class="row d-flex main">
             <div class="col-2 d-flex flex-column gap-5 p-4">
-                <div class="d-flex justify-content-between menuItem">
+                <div class="d-flex justify-content-between menuItem" onclick="changePage(1)">
                     <div class="d-flex align-items-center ">
                         <i class="bi bi-bar-chart-line me-4"></i>
                         <p class="menuText">Dashboard</p>
@@ -55,8 +57,8 @@
                     <i class="bi bi-caret-right"></i>
                 </div>
 
-                <div class="d-flex justify-content-between menuItem">
-                    <div class="d-flex align-items-center ">
+                <div class="d-flex justify-content-between menuItem" onclick="changePage(2)">
+                    <div class="d-flex align-items-center">
                         <i class="bi bi-bookshelf me-4"></i>
                         <p class="menuText">Estoque</p>
                     </div>
@@ -64,7 +66,7 @@
                     <i class="bi bi-caret-right"></i>
                 </div>
 
-                <div class="d-flex justify-content-between menuItem">
+                <div class="d-flex justify-content-between menuItem" onclick="changePage(3)">
                     <div class="d-flex align-items-center ">
                         <i class="bi bi-box-seam me-4"></i>
                         <p class="menuText">Produtos</p>
@@ -73,7 +75,7 @@
                     <i class="bi bi-caret-right"></i>
                 </div>
 
-                <div class="d-flex justify-content-between menuItem">
+                <div class="d-flex justify-content-between menuItem" onclick="changePage(4)">
                     <div class="d-flex align-items-center ">
                         <i class="bi bi-person-badge me-4"></i>
                         <p class="menuText">Usuários</p>
@@ -82,7 +84,7 @@
                     <i class="bi bi-caret-right"></i>
                 </div>
 
-                <div class="d-flex justify-content-between menuItem">
+                <div class="d-flex justify-content-between menuItem" onclick="changePage(5)">
                     <div class="d-flex align-items-center ">
                         <i class="bi bi-person me-4"></i>
                         <p class="menuText">Clientes</p>
@@ -93,9 +95,13 @@
             </div>
             
             <div class="col-10 bg-light">
-                <?php
-                    include 'showProdutos.php';
-                ?>
+            <div id="Dashboard"></div>
+            <div id="Estoque">
+                <?php include 'showProdutos.php'; ?>
+            </div>
+            <div id="Produtos"></div>
+            <div id="Usuarios"></div>
+            <div id="Clientes"></div>
             </div>   
 
         </div>
