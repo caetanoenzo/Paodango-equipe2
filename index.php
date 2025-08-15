@@ -54,7 +54,7 @@
                         <div class="d-flex align-items-center ">
                             <i class="bi bi-bar-chart-line me-4"></i>
                             <ul class="menuText">
-                               <li><a href="">Dashboard</a></li> 
+                               <li>Dashboard</li> 
                             </ul>
                         </div>
 
@@ -67,7 +67,7 @@
                         <div class="d-flex align-items-center">
                             <i class="bi bi-bookshelf me-4"></i>
                             <ul class="menuText">
-                               <li><a href="">Estoque</a></li> 
+                               <li>Estoque</li> 
                             </ul>
                         </div>
 
@@ -80,7 +80,7 @@
                         <div class="d-flex align-items-center ">
                             <i class="bi bi-box-seam me-4"></i>
                             <ul class="menuText">
-                               <li><a href="">Produtos</a></li> 
+                               <li>Produtos</li> 
                             </ul>
                         </div>
 
@@ -93,7 +93,7 @@
                         <div class="d-flex align-items-center ">
                             <i class="bi bi-person-badge me-4"></i>
                             <ul class="menuText">
-                               <li><a href="">Usuários</a></li> 
+                               <li>Usuários</li> 
                             </ul>
                         </div>
 
@@ -106,7 +106,7 @@
                         <div class="d-flex align-items-center ">
                             <i class="bi bi-person me-4"></i>
                             <ul class="menuText">
-                               <li><a href="">Clientes</a></li> 
+                               <li>Clientes</li> 
                             </ul>
                         </div>
 
@@ -119,7 +119,7 @@
             <div class="col-10 bg-light">
             <div id="Dashboard"></div>
             <div id="Estoque">
-                <?php include 'showProdutos.php'; ?>
+                <?php include 'read_produtos.php'; ?>
             </div>
             <div id="Produtos"></div>
             <div id="Usuarios"></div>
